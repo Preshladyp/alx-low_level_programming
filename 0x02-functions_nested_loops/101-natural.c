@@ -1,25 +1,37 @@
-#include "main.h"
+#include <stdio.h>
+
 
 /**
- * main - Entry point
+
+ * main - Prints natural numbers below 1024 that are
+
+ * multiplies of 3 or 5
+
  *
- * Description: computes the sum of all
- *		the multiples of 3 or 5
- *		below 1024 (excluded)
- *
- * Return: Always 0 (Success)
-*/
+
+ * Return: Always 0.
+
+ */
 
 int main(void)
+
 {
-	int sum, num;
 
-	for (num = 0; num < 1024; ++num)
-	{
-		if ((num % 3 == 0) || (num % 5 == 0))
-			sum += num;
-	}
-	printf("%d\n", sum);
+        int a, b;
 
-	return (0);
+
+        for (a = 1; a < 1024; a++)
+
+        {
+
+                if ((a % 3) == 0 || (a % 5) == 0)
+
+                        b += a;
+
+        }
+
+        printf("%d\n", b);
+
+        return (0);
+
 }
