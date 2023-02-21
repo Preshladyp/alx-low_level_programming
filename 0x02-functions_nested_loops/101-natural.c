@@ -1,22 +1,20 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * _isalpha - Shows 1 if the input is a
- * letter Another cases, shows 0
+ * main - Prints natural numbers below 1024 that are
+ * multiplies of 3 or 5
  *
- * @c: The character in ASCII code
- *
- * Return: 1 for letters. 0 for the rest.
+ * Return: Always 0.
  */
-int _isalpha(int c)
+int main(void)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	int a, b;
+
+	for (a = 1; a < 1024; a++)
 	{
-		return (1);
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
+	printf("%d\n", b);
+	return (0);
 }
